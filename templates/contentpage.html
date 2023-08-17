@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Bootstrap CSS -->
+    <link href="../static/css/bootstrap.css" rel="stylesheet" >
+</head>
+<body>
+  {% include 'header.html' %}
+<div class='container'>
+    
+    <hr>
+    
+    <div class='container'>
+    
+        
+      <div class="media">
+          <img class="mr-4 img-thumbnail  height=200" src={{scenes.img}} alt="Responsive image">
+          <div class="media-body">
+            <h3 class="mt-2">{{scenes.name}}</h3>
+              <br>
+              <h4>地址 : {{scenes.content.address}}</h4>
+              <h4>電話 : {{scenes.content.phone}}</h4>
+
+          </div>
+        </div>
+  
+		<br>
+	<h5 >{{scenes.content.text|safe}}</h5>
+
+	<br>
+
+</div>
+
+    <hr>
+    
+</div>
+</body>
+</html>
+
